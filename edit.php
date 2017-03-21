@@ -22,8 +22,8 @@ setcookie();
 
 <?php
 
-$_POST['pseudo'] = $_COOKIE['pseudo'];
-$_POST['password'] = $_COOKIE['password'];
+setcookie('pseudo', $_POST['pseudo'], time() + 365*24*3600, null, null, false, true);
+setcookie('password', $_POST['password'], time() + 365*24*3600, null, null, false, true);
 
 ?>
 
